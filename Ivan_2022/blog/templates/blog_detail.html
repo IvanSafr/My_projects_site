@@ -26,8 +26,8 @@
     <h3>Комментарии:</h3>
     {% for comment in comments %}
     <p>
-        On {{comment.created_on.date }}&nbsp;
-        <b>{{ comment.author }}</b> wrote:
+        {{comment.created_on.date }}&nbsp;
+        <b>{{ comment.author }}</b> написал:
     </p>
     <p>{{ comment.body }}</p>
     <hr>
